@@ -34,9 +34,35 @@
       
 .container
   %h1 Colors 
-  %a.button{href: "#"} Default
+  %a.button.is-gray{href: "#"} Default
   %a.button.is-blue{href: "#"} Firm
   %a.button.is-green{href: "#"} Positive
   %a.button.is-red{href: "#"} Negative
   %a.button.is-black{href: "#"} Inverse
   
+.container
+  %h1 Tabs
+  .block-half
+    .tabs-link
+      %a.tabs-link.is-active{href: "#"} New York
+      %a.tabs-link.is-gray{href: "#"} Los Angeles
+      %a.tabs-link.is-gray{href: "#"} San Francisco
+  .block-half
+    .tabs-link
+      %a.tabs-link.is-active{href: "#"} New York
+      %a.tabs-link.is-black{href: "#"} Los Angeles
+      %a.tabs-link.is-black{href: "#"} San Francisco
+      
+.container
+  .block-half
+    .tabs-link
+      %a.tabs-link.is-active{href: "#"} New York
+      %a.tabs-link.is-white{href: "#"} Los Angeles
+      %a.tabs-link.is-white{href: "#"} San Francisco
+  .block-half
+    .tabs-link
+      %a.tabs-link.is-active{href: "#"} New York
+      %a.tabs-link.is-blue{href: "#"} Los Angeles
+      %a.tabs-link.is-blue{href: "#"} San Francisco
+      
+   
