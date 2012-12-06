@@ -1,4 +1,4 @@
-.container
+.container.cl
   %h1 Bubbles
   .block-half
     .block-inner.is-white
@@ -15,7 +15,7 @@
         %a.button.is-blue{href: "#"} Subscribe
         %a.button{href: "#"} Cancel
 
-.container
+.container.cl
   .block-third
     .block-inner.is-red
       %h2.block-title Everything is bad!
@@ -32,7 +32,7 @@
       %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
       %a.button.is-blue{href: "#"} Subscribe
       
-.container
+.container.cl
   %h1 Colors 
   %a.button.is-gray{href: "#"} Default
   %a.button.is-blue{href: "#"} Firm
@@ -40,41 +40,48 @@
   %a.button.is-red{href: "#"} Negative
   %a.button.is-black{href: "#"} Inverse
   
-.container
+.container.cl
   %h1 Tabs
   .block-half
-    .tabs
+    .tabs.cl
       %a.tabs-link.is-active{href: "#"} New York
       %a.tabs-link.is-gray{href: "#"} Los Angeles
       %a.tabs-link.is-gray{href: "#"} San Francisco
   .block-half
-    .tabs
+    .tabs.cl
       %a.tabs-link.is-active{href: "#"} New York
       %a.tabs-link.is-black{href: "#"} Los Angeles
       %a.tabs-link.is-black{href: "#"} San Francisco
       
-.container
+.container.cl
   .block-half 
-    .tabs
+    .tabs.cl
       %a.tabs-link.is-active{href: "#"} New York
       %a.tabs-link.is-white{href: "#"} Los Angeles
       %a.tabs-link.is-white{href: "#"} San Francisco
   .block-half
-    .tabs
+    .tabs.cl
       %a.tabs-link.is-active{href: "#"} New York
       %a.tabs-link.is-blue{href: "#"} Los Angeles
       %a.tabs-link.is-blue{href: "#"} San Francisco
       
-.container
-  %ul.menu
+.container.cl
+  %ul.menu.cl
     %li
-      %a{href: "#"} Home
-    %li
-      %a{href: "#"} My Projects
-      %ul
-        %li
+      %a.link-is-gray{href: "#"} Home
+    %li.drop-down
+      %a.link-active{href: "#"} My Projects
+      %ul.submenu
+        %li.drop-down-1 
           %a{href: "#"} N.Design Studio
-        %li 
+          %ul.submenu-1
+            %li
+              %a{href: "#"} Sub-level
+            %li
+              %a{href: "#"} Sub-level
+            %li
+              %a{href: "#"} Sub-level
+        %li
           %a{href: "#"} Web Designer Wall
         %li
           %a{href: "#"} IconDock

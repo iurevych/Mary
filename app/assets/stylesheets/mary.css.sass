@@ -3,9 +3,17 @@ body
   color: #372F2B
   font: 14px/18px "Helvetica Neue",Arial,sans-serif
   height: 100%
-  
-.container 
-  overflow: hidden
+
+.cl:before,
+.cl:after
+  display: table
+  line-height: 0
+  content: ""
+
+.cl:after
+  clear: both
+
+.container
   width: 960px
   margin: auto
       
@@ -87,7 +95,6 @@ body
     color: white
     
 .tabs
-  overflow: hidden
   margin: 10px
   
 .tabs-link
@@ -118,7 +125,6 @@ body
   padding: 10px
 
 .menu
-  overflow: hidden
   background-color: #aaa
   border-radius: 100px
   color: white
@@ -129,10 +135,69 @@ body
   color: white
   text-decoration: none
   
-.menu ul
+  &.link-is-gray
+    border-top: solid 1px #F8F8F8
+    background-color: #EFEFEB
+    border-radius: 100px
+    color: #444
+    padding: 8px 20px
+    font-weight: bold
+
+.submenu
+  background: #ccc
+  left: 0
+  top: 48px
+  width: 200px  
   list-style-type: none
-    
+  position: absolute
+  padding: 0
+  display: none
+
+.submenu li a
+  display: block
+  padding: 7px 15px
   
+.submenu li a:hover
+  background-color: #3B85C3
   
-    
-    
+.drop-down
+  position: relative
+
+.drop-down:hover .submenu
+  display: block
+  border-radius: 10px
+  
+
+.link-active:hover
+  color: #444
+  font-weight: bold
+  background-color: #EFEFEB
+  border-radius: 100px
+  padding: 10px
+  
+.submenu-1
+  background: #ccc
+  left: 101%
+  top: 0px
+  width: 200px  
+  list-style-type: none
+  position: absolute
+  padding: 0
+  display: none
+
+.drop-down-1
+  position: relative
+  
+.submenu-1 li a
+  display: block
+
+.submenu-1 li a:hover
+  background-color: #3B85C3
+
+.drop-down
+  position: relative
+
+.drop-down-1:hover .submenu-1
+  display: block
+  border-radius: 10px
+
