@@ -1,69 +1,7 @@
-.container.cl
-  %h1 Bubbles
-  .block-half
-    .block-inner.is-white
-      %h2 Going good
-      %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
-      .buttons
-        %a.button.is-blue{href: "#"} Subscribe
-        %a.button{href: "#"} Cancel
-  .block-half  
-    .block-inner.is-blue
-      %h2.block-title Something important
-      %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
-      .buttons
-        %a.button.is-blue{href: "#"} Subscribe
-        %a.button{href: "#"} Cancel
-
-.container.cl
-  .block-third
-    .block-inner.is-red
-      %h2.block-title Everything is bad!
-      %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
-      %a.button.is-blue{href: "#"} Subscribe
-  .block-third
-    .block-inner.is-yellow 
-      %h2.block-title  Note that
-      %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
-      %a.button.is-blue{href: "#"} Subscribe
-  .block-third
-    .block-inner.is-green 
-      %h2.block-title  Everything is OK!
-      %p The Nashville Sounds are a minor league baseball team of the Pacific Coast League and the Triple-A affiliate of the Milwaukee Brewers.
-      %a.button.is-blue{href: "#"} Subscribe
-      
-.container.cl
-  %h1 Colors 
-  %a.button.is-gray{href: "#"} Default
-  %a.button.is-blue{href: "#"} Firm
-  %a.button.is-green{href: "#"} Positive
-  %a.button.is-red{href: "#"} Negative
-  %a.button.is-black{href: "#"} Inverse
-  
-.container.cl
-  %h1 Tabs
-  .block-half
-    .tabs.cl
-      %a.tabs-link.is-active{href: "#"} New York
-      %a.tabs-link.is-gray{href: "#"} Los Angeles
-      %a.tabs-link.is-gray{href: "#"} San Francisco
-  .block-half
-    .tabs.cl
-      %a.tabs-link.is-active{href: "#"} New York
-      %a.tabs-link.is-black{href: "#"} Los Angeles
-      %a.tabs-link.is-black{href: "#"} San Francisco
-      
-.container.cl
-  .block-half 
-    .tabs.cl
-      %a.tabs-link.is-active{href: "#"} New York
-      %a.tabs-link.is-white{href: "#"} Los Angeles
-      %a.tabs-link.is-white{href: "#"} San Francisco
-  .block-half
-    .tabs.cl
-      %a.tabs-link.is-active{href: "#"} New York
-      %a.tabs-link.is-blue{href: "#"} Los Angeles
-      %a.tabs-link.is-blue{href: "#"} San Francisco
+.container.cl 
+  %a.tabs-link.is-active{href: "#"} New York
+  %a.tabs-link.is-blue{href: "#"} Los Angeles
+  %a.tabs-link.is-blue{href: "#"} San Francisco
       
 .container.cl
   %ul.menu.cl
@@ -71,6 +9,7 @@
       %a.link-is-gray{href: "#"} Home
     %li.drop-down
       %a.link-active{href: "#"} My Projects
+      // Выпадающая серая менюшка
       %ul.submenu
         %li.drop-down-1 
           %a{href: "#"} N.Design Studio
@@ -87,46 +26,67 @@
           %a{href: "#"} IconDock
         %li
           %a{href: "#"} N.Design Studio Best Web Gallery
-    %li
-      %a{href: "#"} Multi-levels
-    %li
-      %a{href: "#"} About
-    %li
-      %a{href: "#"} Contact us
+        %li
+          %a{href: "#"} Multi-levels
+        %li
+          %a{href: "#"} About
+        %li
+          ы%a{href: "#"} Contact us
       
 .container.cl
   %h1 Menus
   .block-third
-    .block-menu-is-blue
-      %ul.menus
-        %li.menus-is-blue
-          %a.menu-link-is-active{href: "#"} Audio
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Music
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Audio books
-        %li.menus-is-last
-          %a.menu-link{href: "#"} Sound clips
+    %ul.nav.cl
+      %li
+        %a.is-active{href: "#"} 
+          Audio
+          %span 55
+      %li
+        %a{href: "#"} 
+          Music
+          %span 56
+      %li
+        %a{href: "#"} 
+          Audio books
+          %span 57
+      %li
+        %a{href: "#"} 
+          Sound clips
+          %span 58
   .block-third
-    .block-menu-is-yellow
-      %ul.menus
-        %li.menus-is-yellow
-          %a.menu-link-is-active{href: "#"} Audio
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Music
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Audio books
-        %li.menus-is-last
-          %a.menu-link{href: "#"} Sound clips
-  .block-third
-    .block-menu-is-green
-      %ul.menus
-        %li.menus-is-green
-          %a.menu-link-is-active{href: "#"} Audio
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Music
-        %li.menus-are-white
-          %a.menu-link{href: "#"} Audio books
-        %li.menus-is-last
-          %a.menu-link{href: "#"} Sound clips
-         
+    %ul.nav.cl
+      %li
+        %a.is-active-yellow{href: "#"} 
+          Audio
+          %span.is-yellow 55
+      %li
+        %a{href: "#"} 
+          Music
+          %span.is-yellow 56
+      %li
+        %a{href: "#"} 
+          Audio books
+          %span.is-yellow 57
+      %li
+        %a{href: "#"} 
+          Sound clips
+          %span.is-yellow 58
+
+  .block-third                              
+    %ul.nav.cl                               
+      %li                                    
+        %a.is-active-green{href: "#"}     
+          Audio                              
+          %span.is-green 55                 
+      %li                                    
+        %a{href: "#"}                        
+          Music                              
+          %span.is-green 56                 
+      %li                                    
+        %a{href: "#"}                        
+          Audio books                        
+          %span.is-green 57                 
+      %li                                    
+        %a{href: "#"}                        
+          Sound clips                        
+          %span.is-green 58                                                              
