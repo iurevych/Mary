@@ -1,267 +1,41 @@
-body
-  background-color: #EFEFEB
-  color: #372F2B
-  font: 14px/18px "Helvetica Neue",Arial,sans-serif
-  height: 100%
+.body
+  background-color: green
+.wrapper
+  width: 980px
+  margin: 0 auto
+  min-height: 100%
+  
+.header
+  height: 180px
+  text-align: center
+  display: block
 
-.cl:before,
-.cl:after
-  display: table
-  line-height: 0
-  content: ""
-
-.cl:after
-  clear: both
-
-.container
-  width: 960px
-  margin: auto
-      
-.block-half
+li 
+  display: inline
+  list-style-type: none
+  
+.top-menu
   float: left
-  width: 50%
-  
-.block-third
-  float: left
-  width: 33.33333%
-
-.block-inner
-  margin: 20px
-  padding: 20px
-  border: 1px solid rgba(0, 0, 0, 0.15)
-  border-radius: 10px
-  font-size: 15px
-  margin-bottom: 20px
-  padding: 20px
-  padding-bottom: 11px
-  position: relative
-  
-  &.is-white
-    background-color: white
-  &.is-blue
-    background-color: #F3F8FC
-    border: 3px solid rgba(137, 199, 239, 0.4)
-    .block-title
-      color: #3B86C4
-  &.is-red
-    background-color: #F7F0F2
-    border: 3px solid rgba(238, 147, 147, 0.4)
-    .block-title
-      color: #CF6E6E
-  &.is-yellow
-    background-color: #FAFAF6
-    border: 3px solid rgba(198, 203, 153, 0.4)
-    .block-title
-      color: #ABAE8F
-  &.is-green
-    background-color: #F1F7F0
-    border: 3px solid rgba(111, 182, 121, 0.4)
-    .block-title
-      color: #7BAB73
-  
-.block-inner h2
-  margin: 5px 0
-    
-.block-title
-  margin: 5px 0
-
-.button
-  background-color: #ddd
-  border: none
-  border-radius: 90px
-  color: #333
-  cursor: pointer
-  display: inline-block
-  font: 16px/normal "Helvetica Neue", Arial, sans-serif
-  padding: 9px 30px 11px  
-  text-decoration: none
-  vertical-align: middle
-  margin: 10px 10px 10px 0
-  
-  &.is-blue
-    background-color: #3B85C3
-    color: white
-  &.is-green
-    background-color: #7AAA72
-    color: white
-  &.is-red
-    background-color: #D72E2E
-    color: white
-  &.is-black
-    background-color: #372F2B
-    color: white
-  &.is-gray
-    background-color: #ADADAD
-    color: white
-    
-.tabs
-  margin: 10px
-  
-.tabs-link
-  float: left
-  text-decoration: none  
-  color: #372F2B
-  font-size: 15px
-  font-weight: bold
-  padding: 11px 17px 17px
-  position: relative
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25)
-  
-  &.is-active 
-    background-color: #EFEFEB
-    display: block
-  &.is-gray
-    background-color: #DDD
-  &.is-black
-    background-color: #606060
-  &.is-white
-    background-color: white
-  &.is-blue
-    background-color: #3B86C4
-    
-.menu > li
-  float: left
-  margin: 10px
   padding: 10px
-
-.menu
-  background-color: #aaa
-  border-radius: 100px
-  color: white
-  list-style-type: none
- 
-
-.menu li a
-  color: white
+  background-color: #FFEFD5
+  font: 12px/18px Arial, Tahoma, Verdana, sans-serif
+  
+.top-menu li
+  border-right: 1px solid #458A2F
+  line-height: 1  
+  
+.top-menu li a
   text-decoration: none
+  color: #458A2F
+  padding: 5px
+.top-menu li a:hover
+  text-decoration: underline
   
-  &.link-is-gray
-    border-top: solid 1px #F8F8F8
-    background-color: #EFEFEB
-    border-radius: 100px
-    color: #444
-    padding: 8px 20px
-    font-weight: bold
-    
-//  Выпадающая серая менюшка
-.submenu
-  left: 0
-  top: 37px
-  width: 200px  
-  list-style-type: none
-  position: absolute
-  padding: 11px 0 0 0
-  display: none
-  z-index: 10
-  
-
-.submenu li a
-  display: block
-  padding: 7px 15px
-  background: #ccc
-  
-.submenu li a:hover
-  background-color: #3B85C3
-  
-.drop-down
-  position: relative
-
-.drop-down:hover .submenu
-  display: block
-  border-radius: 10px
-  
-
-.link-active
-  font-weight: bold
-  border-radius: 100px
+.tab-menu
+  float: left
   padding: 10px
+  background-color: gray
+  font: 12px/18px Arial, Tahoma, Verdana, sans-serif
   
-.link-active:hover
-  color: #444
-  background-color: #EFEFEB
   
-.submenu-1
-  background: #ccc
-  left: 101%
-  top: 0px
-  width: 200px  
-  list-style-type: none
-  position: absolute
-  padding: 0
-  display: none
-
-.drop-down-1
-  position: relative
   
-.submenu-1 li a
-  display: block
-
-.submenu-1 li a:hover
-  background-color: #3B85C3
-
-.drop-down
-  position: relative
-
-.drop-down-1:hover .submenu-1
-  display: block
-  border-radius: 10px
-  
-.nav
-  list-style-type: none  
-  
-.nav li a
-  background-color: #FFFAFA
-  color: #5F5F5F
-  display: block
-  font: 500 15px "Helvetica Neue",Arial,sans-serif
-  line-height: 23px
-  min-height: 23px
-  padding: 12px 20px
-  text-decoration: none
-
-  &.is-active
-    background-color: #E0FFFF
-    color: black
-  &.is-active:hover
-    background-color: #E0FFFF
-    color: black
-  &.is-active-yellow
-    background-color: yellow
-    color: black
-  &.is-active-yellow:hover
-    background-color: yellow
-    color: black
-  &.is-active-green
-    background-color: #00FF7F
-    color: black
-  &.is-active-green:hover
-    background-color: #00FF7F
-    color: black
-  
-  span
-    float: right
-    background-color: white
-    border-radius: 81px
-    float: right
-    line-height: normal
-    margin-bottom: -1px
-    margin-top: -2px
-    padding: 4px 17px
-  
-.nav li a:hover
-  background-color: #F5F5DC
-  color: #3B86C4
-  padding: 12px 20px
-
-.nav li a span.is-yellow
-  background-color: #FFDAB9
-  box-shadow: 0 0 0 1px rgba(198, 203, 153, 0.4),inset 0 0 0 2px rgba(198, 203, 153, 0.4)
-
-.nav li a span.is-green
-  background-color: #98FB98
-  box-shadow: 0 0 0 1px rgba(198, 203, 153, 0.4),inset 0 0 0 2px rgba(198, 203, 153, 0.4)
-  
-
-
-
-
