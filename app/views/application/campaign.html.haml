@@ -1,0 +1,53 @@
+.header
+  .wrapper
+    .header-logo
+      %img{:src => "/assets/logo-curebit.png"}
+    .header-menu
+      %ul
+        %li
+          %a{href: "#"} Feedback
+        %li
+          %a{href: "#"} Settings
+        %li
+          %a{href: "#"} Account & billing
+        %li
+          %a{href: "#"} Logout
+.wrapper        
+  %ul.wizard
+    %li
+      %a.is-active{href: "#"} 
+        %span.wizard-step 1 
+        %span Offer placement
+    %li
+      %a{href: "#"} 
+        %span.wizard-step 2
+        %span Campaign setup
+    %li
+      %a{href: "#"} 
+        %span.wizard-step 3
+        %span Referrer rewards
+    %li
+      %a{href: "#"} 
+        %span.wizard-step 4 
+        %span Referred rewards
+          
+          
+          
+.main-navigation
+  .upper-text
+    %h1 Offer placement
+    .main-content
+      .left-box
+        %h2 Where would you like to show an offer at?
+        %h3 You cam always change it for your other campaign
+        %input{:type => "radio"}
+        Offer will be shown on the Thank you page after someone makes purchase.
+        %input{:type => "radio"}
+        A page on my site allowing anyone to share an offer.
+        .right-box
+          %img{:src => "/assets/logo-curebit.png"}
+    .footer-navigation
+      .button
+        %a{href: "#"} Proceed to next step
+        
+        
