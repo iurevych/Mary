@@ -1,0 +1,35 @@
+@import '../config'
+
+.header
+  background-image: image-url("header-background.png")
+  
+.header-logo
+  padding: 13px 0 10px 0
+  float: left
+  width: 25%
+  
+.header-menu
+  float: left
+  width: 75%
+  
+.header-menu ul
+  float: right
+  
+.header-menu li
+  float: left
+  border-right: 1px solid black
+  +box-shadow(1px 0 0 rgba(white, 0.1))
+
+  &:last-child
+    border-right: none
+    +box-shadow(none)
+  
+.header-menu a
+  color: #bbbbbb
+  font-size: 14px
+  font-weight: bold
+  padding: 16px 
+  display: block
+  
+  &:hover
+    color: white
