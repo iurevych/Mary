@@ -29,25 +29,27 @@
     %li
       %a{href: "#"} 
         %span.wizard-step 4 
-        %span Referred rewards
-          
-          
-          
-.main-navigation
-  .upper-text
-    %h1 Offer placement
-    .main-content
-      .left-box
+        %span Referred rewards       
+        
+  .content
+    .content-header
+      %h1 Offer placement
+    .content-holder
+      .content-part
         %h2 Where would you like to show an offer at?
-        %h3 You cam always change it for your other campaign
-        %input{:type => "radio"}
-        Offer will be shown on the Thank you page after someone makes purchase.
-        %input{:type => "radio"}
-        A page on my site allowing anyone to share an offer.
-        .right-box
-          %img{:src => "/assets/logo-curebit.png"}
-    .footer-navigation
-      .button
-        %a{href: "#"} Proceed to next step
+        %h3 You can always change it for your other campaign
+        .option.is-active
+          %input#offer-position{:type => "radio"} 
+          %label{:for => "offer-position"} 
+            Offer will be shown on the Thank you page after someone makes purchase.
+        .option
+          %input#page-location{:type => "radio"}
+            %label{:for => "page-location"} 
+              A page on my site allowing anyone to share an offer.
+      .content-part
+        .option-description
+          %img{:src => "/assets/offer-preview.jpg"}
+    .content-footer
+      %a.button{href: "#"} Proceed to next step
         
         
