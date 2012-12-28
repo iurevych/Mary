@@ -1,6 +1,6 @@
 @import '../config'
 
-.button
+.button-is-firm
   background-color: #ff5900
   border-radius: 4px
   color: white
@@ -15,4 +15,20 @@
   
   &:hover
     color: white
-
+    
+.button
+  background-color: #cacaca
+  border-radius: 4px
+  color: #333333
+  cursor: pointer
+  font: 18px/normal Helvetica Neue, sans-serif
+  margin-left: 20px
+  padding: 12px 22px 12px 22px
+  text-decoration: none
+  +inline-block
+  +vertical-gradient(#f6f6f6, #e6e6e6)
+  +box-shadow((inset 0px 0px 0px 1px #cacaca, inset 0px 2px 0px white, 0px 3px 0px #b7b4b2))
+  text-shadow: 0px 1px 0px rgba(#ffffff, 0.50)
+  
+  &:hover
+    color: #333333

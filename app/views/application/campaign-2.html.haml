@@ -1,0 +1,27 @@
+= render :partial => "application/header"
+
+.wrapper 
+  =render :partial => "application/wizard"
+  .content
+    .content-header
+      %h1 Campaign setup
+    .content-holder
+      .content-part
+        %h2 Choose quick start or detailed setup wizard.
+        %h3 You can also tweak it later before activating it.
+        .option.is-active
+          %input#offer-position{:type => "radio"} 
+          %label{:for => "offer-position"} 
+            %strong Quick Start 
+            — get your campaign created with recommended defaults instantly.
+        .option
+          %input#page-location{:type => "radio"}
+          %label{:for => "page-location"} 
+            %strong Advanced Wizard
+            — answer a set of questions to create your campaign exactly as you want it.
+      .content-part
+        .option-description
+          %img{:src => "/assets/image-clock-step2.jpg"}
+    .content-footer
+      %a.button-is-firm{href: "#"} Proceed to next step
+      %a.button{href: "#"} Go back
