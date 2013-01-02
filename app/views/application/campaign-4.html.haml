@@ -1,0 +1,61 @@
+= render :partial => "application/header"
+
+.wrapper 
+  =render :partial => "application/wizard"
+  .content
+    .content-header
+      %h1 Referrer rewards
+    .content-holder
+      .content-part
+        %h2 What type of reward would you like to give the new customer?
+        .option.is-active
+          %input#coupon-discount{:type => "radio"} 
+          %label{:for => "coupon-discount"} 
+            Coupon Discount — offers instant savings on a new purchase
+        .option-opportunity
+          %h5 Enter a multiuse coupon code
+          %input{:type => "text"} 
+        .option
+          %input#subsequent-purchase{:type => "radio"}
+          %label{:for => "subsequent-purchase"} 
+            Coupon for subsequent purchase — friends will receive it after making their first purchase
+        .option
+          %input#rebate{:type => "radio"}
+          %label{:for => "rebate"} 
+            Rebate on the first purchase
+        .option
+          %input#manual-reward{:type => "radio"}
+          %label{:for => "manual-reward"} 
+            Manual reward
+        .option.is-last
+          %input#no-incentive{:type => "radio"}
+          %label{:for => "no-incentive"} 
+            No incentive
+        %h2 What discount are you offering for friends on their purchase?
+        .option.is-last
+          %input#currency{:type => "radio"}
+          %label{:for => "currency"}
+            15 Dollars
+        %h2 When are you going to reward referrer?
+        .option
+          %input#all-purchase{:type => "radio"}
+          %label{:for => "all-purchase"} 
+            When referred friend make any purchase
+        .option
+          %input#some-purchase{:type => "radio"}
+          %label{:for => "some-purchase"} 
+            When referred friend make a minimum purchase of:
+            
+      .content-part
+        .option-specification
+          %h4 
+            Coupon discount  
+            %span.option-recommended 
+              recommended
+          %p A coupon discount offering instant savings on a new purchase is generally the highest performing incentive for your customer's friends.
+          %p The instant discount can increase conversion rates 2—3x.
+        .option-specification.is-clarification
+          For best performance, offer your original customer and their friends a reward of equal value.
+    .content-footer
+      %a.button-is-firm{href: "#"} Proceed to next step
+      %a.button{href: "#"} Go back

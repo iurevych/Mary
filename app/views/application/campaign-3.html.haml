@@ -1,0 +1,63 @@
+= render :partial => "application/header"
+
+.wrapper 
+  =render :partial => "application/wizard"             
+  .content
+    .content-header
+      %h1 Referrer rewards
+    .content-holder
+      .content-part
+        %h2 What type of reward would you like to give the referrer?
+        .option.is-active
+          %input#monetary-rebate{:type => "radio"} 
+          %label{:for => "monetary-rebate"} 
+            Monetary Rebate — highest performing reward for your customer.
+        .option
+          %input#coupon-code{:type => "radio"}
+          %label{:for => "page-location"} 
+            Coupon Code — coupon discount for next purchase
+        .option
+          %input#non-monetary-reward{:type => "radio"}
+          %label{:for => "non-monetary-reward"} 
+            Non Monetary — a reward you will send using referrer contact details
+        .option.is-last
+          %input#not-rewarding{:type => "radio"}
+          %label{:for => "not-rewarding"} 
+            Don’t reward at all.
+        %h2 How would you like this rebate to be fulfilled?
+        .option
+          %input#curebit-rebate{:type => "radio"}
+          %label{:for => "curebit-rebate"} 
+            Rebated paid by Curebit via PayPal after 14 days
+        .option.is-last
+          %input#manual-rebate{:type => "radio"}
+          %label{:for => "manual-rebate"} 
+            Manual Rebate fulfilled by you
+        %h2 How would you like this rebate to be fulfilled?
+        .option.is-last
+          %input#currency{:type => "radio"}
+          %label{:for => "currency"}
+            15 Dollars
+        %h2 For what purchases you would like to show this offer?
+        .option
+          %input#all-purchase{:type => "radio"}
+          %label{:for => "all-purchase"} 
+            For all purchases from your store
+        .option
+          %input#some-purchase{:type => "radio"}
+          %label{:for => "some-purchase"} 
+            For purchases from your store that are:
+            
+      .content-part
+        .option-specification
+          %h4 
+            Monetary Rebate   
+            %span.option-recommended 
+              recommended
+          %p A rebate is generally the highest performing reward for your customer. 
+          %p It lets your customer get money back on the purchase they already made,while a coupon requires them to make a second purchase.
+        .option-specification.is-clarification
+          We generally find that the highest performing campaigns offer an equal incentive to both your customer and their friends.
+    .content-footer
+      %a.button-is-firm{href: "#"} Proceed to next step
+      %a.button{href: "#"} Go back

@@ -1,13 +1,19 @@
 @import '../config'
 
 .option
+  background-size: 100% 100%
   background-repeat: no-repeat
-  padding: 5px 0 8px 24px  
+  padding: 5px 24px 8px 24px  
   margin: 15px 20px 0 0
   +clearfix
+  background-width: 100% 100%
   
   &.is-active
     background-image: image-url("yellow-arrow.png")
+    
+  &.is-last
+    border-bottom: 1px solid #dadada
+    padding-bottom: 20px
 
   input
     float: left
@@ -26,3 +32,41 @@
     border-radius: 5px 5px 0 0
     width: 100%
     display: block
+    
+.option-specification
+  background-color: #fff6c4
+  margin: 25px 25px 0 0 
+  padding: 26px
+  border-radius: 5px
+  font-size: 16px
+  color: #333333
+  
+  &.is-clarification
+    background-color: #ebebeb
+    color: #333333
+    font-size: 14px
+    padding: 19px 35px 19px 27px
+    
+  h4
+    font-size: 20px
+    color: #333333
+  p
+    padding-top: 20px
+    
+.option-recommended
+  background-color: #ff5900
+  padding: 3px 8px 3px 8px
+  border-radius: 3px
+  color: #ffffff
+  font-size: 14px
+  font-weight: normal
+  margin-left: 11px
+
+.option-opportunity
+  padding: 10px 0 10px 50px
+  background-color: #fff6c4
+  
+  h5
+    color: #333333
+    font-size: 16px
+

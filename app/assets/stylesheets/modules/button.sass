@@ -13,9 +13,15 @@
   +box-shadow((inset 0px 1px 0px #ff5900, inset 0px 2px 1px rgba(#ffffff, 0.66), 0px 3px 0px #c24400))
   text-shadow: 0px 1px 0px rgba(#000000, 0.25)
   
-  &:hover
+  &:hover,
+  &:focus
+    +vertical-gradient(#f75905, #e45609)
     color: white
     
+  &:active
+    +vertical-gradient(#e45609, #c74c0a)
+    color: white
+ 
 .button
   background-color: #cacaca
   border-radius: 4px
@@ -30,5 +36,12 @@
   +box-shadow((inset 0px 0px 0px 1px #cacaca, inset 0px 2px 0px white, 0px 3px 0px #b7b4b2))
   text-shadow: 0px 1px 0px rgba(#ffffff, 0.50)
   
-  &:hover
+  &:hover,
+  &:focus
+    +vertical-gradient(#e6e6e6, #dddddd)
     color: #333333
+    
+  &:active
+    +vertical-gradient(#dddddd, #d0d0d0)
+    color: #333333
+    
