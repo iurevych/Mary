@@ -8,4 +8,7 @@ class ApplicationController < ActionController::Base
   def campaign_5
     render :layout => false
   end
+  def campaign_6
+    render :layout => false
+  end
 end
