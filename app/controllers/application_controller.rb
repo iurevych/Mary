@@ -11,4 +11,7 @@ class ApplicationController < ActionController::Base
   def campaign_6
     render :layout => false
   end
+  def bricks
+    render :layout => "bricks"
+  end
 end
